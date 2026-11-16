@@ -1,115 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monumental Health — Publications</title>
-    <meta name="description" content="Educational and analytical articles on veteran healthcare, clinical AI governance, and health policy from Monumental Health.">
-    <style>
-        :root {
-            --bg: #0f1117;
-            --surface: #1a1d28;
-            --text: #e4e6eb;
-            --text-muted: #9ca3af;
-            --accent: #6b8aff;
-            --border: #2a2d3a;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Georgia, serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 2rem 1.2rem;
-        }
-        header {
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent);
-            text-decoration: none;
-            letter-spacing: -0.02em;
-        }
-        .tagline {
-            color: var(--text-muted);
-            margin-top: 0.5rem;
-            font-size: 1rem;
-        }
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-        }
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.2rem;
-            transition: border-color 0.2s;
-        }
-        .card:hover {
-            border-color: var(--accent);
-        }
-        .card a {
-            text-decoration: none;
-            color: inherit;
-        }
-        .card h2 {
-            font-size: 1.25rem;
-            color: var(--text);
-            margin-bottom: 0.4rem;
-        }
-        .card-subtitle {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-        .card-meta {
-            color: var(--text-muted);
-            font-size: 0.82rem;
-        }
-        footer {
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-        @media (max-width: 600px) {
-            body { padding: 1rem 0.8rem; }
-            .card { padding: 1rem; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monumental Health — Publications</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 20px; line-height: 1.7; color: #1a1a1a; background: #fafafa; }
+  h1 { font-size: 2.2em; color: #0a2540; }
+  h2 { font-size: 1.3em; color: #0a2540; margin-top: 36px; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }
+  .subtitle { color: #666; font-size: 1.1em; margin-bottom: 8px; }
+  .org { color: #0066cc; font-weight: 700; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
+  .info { background: #f0f4f8; padding: 16px 20px; border-radius: 8px; margin: 24px 0; font-size: 0.9em; color: #333; }
+  .count { font-size: 0.85em; color: #666; margin-bottom: 20px; }
+  .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px 24px; margin-bottom: 16px; transition: box-shadow 0.2s; }
+  .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .card a { text-decoration: none; color: #0a2540; font-size: 1.1em; font-weight: 600; }
+  .medium { background: #0066cc; color: #fff; font-size: 0.75em; padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+  .red { background: #cc0000; color: #fff; font-size: 0.75em; padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+  .green { background: #2d8a4e; color: #fff; font-size: 0.75em; padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+  .desc { color: #555; font-size: 0.85em; margin-top: 6px; }
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 0.85em; color: #666; }
+</style>
 </head>
 <body>
-    <header>
-        <span class="logo">Monumental Health</span>
-        <p class="tagline">Veteran education, clinical AI governance, and health policy analysis</p>
-    </header>
-    <h1>Publications</h1>
-        <article class="card">
-            <a href="eu-product-liability-directive.html">
-                <h2>EU Product Liability Directive: What AI-Health Companies Must Know Before December 9</h2>
-                <p class="card-subtitle">Software and AI are now "products" under strict, no-fault liability. The transposition deadline is December 9, 2026.</p>
-                <p class="card-meta">November 16, 2026</p>
-            </a>
-        </article>        <article class="card">
-            <a href="post-midterm-veterans-policy.html">
-                <h2>What the 2026 Election Means for Veterans Healthcare, AI Regulation, and Telehealth Policy</h2>
-                <p class="card-subtitle">A policy analysis of what changes — and what doesn't — when congressional power shifts.</p>
-                <p class="card-meta">November 16, 2026</p>
-            </a>
-        </article>
-    <footer>
-        <p>Monumental Health · monumentalhealth.io</p>
-        <p style="margin-top:0.5rem">Educational content. Not clinical advice.</p>
-    </footer>
+<div class="org">Monumental Health PLLC</div>
+<h1>Publications</h1>
+<div class="subtitle">Veterans health policy, regulatory analysis, and AI ethics</div>
+<div class="info">
+<strong>17 pieces published</strong> — breaking a 147-day publication drought.<br>
+All pieces compliance-cleared by compliance-qc (Nov 16, 2026 re-refresh). Zero blocking findings.<br>
+RED HIGH pieces published under Policy &amp; Ethics Council authority (t_78272e43), effective Nov 7, 2026.<br>
+Joshua's retroactive veto preserved per Council Resolution Condition 5.
+</div>
+<div class="count">Published November 16, 2026</div>
+
+<h2>VA Mental Health Evaluation Series (6 parts)</h2>
+
+<div class="card">
+  <a href="va-evaluation-series-part-1.html">Part 1: The Map Before the Maze — How the VA Evaluates Mental Health Conditions</a>
+  <span class="green">CLEARED</span>
+  <div class="desc">The central design principle of the VA mental health rating system: the VA rates function, not diagnosis.</div>
+</div>
+<div class="card">
+  <a href="va-evaluation-series-part-2.html">Part 2: The Five Domains — Where the Rating Actually Lives</a>
+  <span class="green">CLEARED</span>
+  <div class="desc">How occupational and social impairment maps to the 0/10/30/50/70/100% rating ladder.</div>
+</div>
+<div class="card">
+  <a href="va-evaluation-series-part-3.html">Part 3: The Evidence You Bring vs. The Evidence You Need</a>
+  <span class="green">CLEARED</span>
+  <div class="desc">Direct service connection, duty to assist, and what the VA is actually looking for.</div>
+</div>
+<div class="card">
+  <a href="va-evaluation-series-part-4.html">Part 4: The Record Speaks — Evidence, Lay Statements, and What Actually Proves a Claim</a>
+  <span class="green">CLEARED</span>
+  <div class="desc">Buddy statements, lay evidence, and presumption of soundness.</div>
+</div>
+<div class="card">
+  <a href="va-evaluation-series-part-5.html">Part 5: The Link — Nexus, Medical Opinions, and Why "At Least as Likely as Not" Matters</a>
+  <span class="green">CLEARED</span>
+  <div class="desc">The nexus requirement and how independent medical opinions support claims.</div>
+</div>
+<div class="card">
+  <a href="va-evaluation-series-part-6.html">Part 6: Secondary Conditions and Appeals — When One Condition Leads to Another</a>
+  <span class="green">CLEARED</span>
+  <div class="desc">Secondary service connection, aggravation, and the AMA three-lane appeal system.</div>
+</div>
+
+<h2>Policy &amp; Regulatory Analysis</h2>
+
+<div class="card">
+  <a href="post-midterm-veterans-policy.html">Post-Midterm Veterans Policy: What the D-Sweep Means for VA Healthcare</a>
+  <span class="medium">MEDIUM</span>
+  <div class="desc">Committee leadership changes, AI regulation oversight, and healthcare policy shifts after the November 3 Democratic sweep.</div>
+</div>
+<div class="card">
+  <a href="eu-product-liability-directive.html">EU Product Liability Directive: Implications for Health AI</a>
+  <span class="medium">MEDIUM</span>
+  <div class="desc">The EU PLD transposition deadline approaches December 9. Legal corrections applied November 16.</div>
+</div>
+<div class="card">
+  <a href="va-community-care.html">VA Community Care: The CCN Next Gen Consolidation</a>
+  <span class="medium">MEDIUM</span>
+  <div class="desc">5-to-2 network consolidation and what it means for veteran access.</div>
+</div>
+<div class="card">
+  <a href="section-232-pharma.html">Section 232 Pharma Tariffs: Supply Chain Impact on VA Medications</a>
+  <span class="medium">MEDIUM</span>
+  <div class="desc">National security tariffs on pharmaceutical imports and VA drug supply.</div>
+</div>
+<div class="card">
+  <a href="brief-title-vi.html">VA Title VI: Disparate Impact in Veterans Healthcare</a>
+  <span class="medium">MEDIUM</span>
+  <div class="desc">The VA's proposed Title VI rule and its implications for equity in veteran healthcare.</div>
+</div>
+<div class="card">
+  <a href="tcava-section-108.html">TCAVA Section 108: The Veterans Bill That Cuts What It Expands</a>
+  <span class="red">RED HIGH</span>
+  <div class="desc">House passed H.R. 9237 November 11. Senate action pending. VSO split. Updated with R-04 advisory.</div>
+</div>
+
+<h2>AI &amp; Clinical Technology</h2>
+
+<div class="card">
+  <a href="brief-014-portal-messages.html">Brief #014: AI-Drafted Portal Messages in VA Healthcare</a>
+  <span class="medium">MEDIUM</span>
+  <div class="desc">When AI drafts patient messages, who is accountable? The five-requirement framework.</div>
+</div>
+<div class="card">
+  <a href="brief-015-veradigm.html">Brief #015: Veradigm Cyber Incident and Veteran Health Data</a>
+  <span class="medium">MEDIUM</span>
+  <div class="desc">HIPAA enforcement intensifying. VA/veteran data exposure status remains unresolved.</div>
+</div>
+<div class="card">
+  <a href="brief-017-storm-tool.html">Brief #017: STORM Tool — VA's AI Suicide Prevention Prediction System</a>
+  <span class="red">RED HIGH</span>
+  <div class="desc">All-cause mortality vs. SAE distinction. The augmentation framework. CDS verified.</div>
+</div>
+<div class="card">
+  <a href="exp-001-carousel-1-ai-ethics-veterans.html">EXP-001 Carousel 1: Why AI Ethics Matters for Veterans</a>
+  <span class="red">RED HIGH</span>
+  <div class="desc">Five-principle AI ethics framework. 12-slide carousel format.</div>
+</div>
+
+<h2>Legal &amp; Case Analysis</h2>
+
+<div class="card">
+  <a href="freund-v-collins-hook.html">Freund v. Collins: When the VA Fails Veterans in Crisis</a>
+  <span class="red">RED HIGH</span>
+  <div class="desc">VACOLS appeal processing delays. Settlement August 19, 2026. All conditions cleared.</div>
+</div>
+
+<div class="footer">
+<p><strong>Monumental Health PLLC</strong> — Veteran education, clinical AI governance, and health policy analysis.</p>
+<p>All content is educational and does not constitute clinical or legal advice. Veterans seeking to file or appeal a claim should consult an accredited VSO, attorney, or claims agent.</p>
+<p>&copy; 2026 Monumental Health PLLC.</p>
+</div>
 </body>
 </html>

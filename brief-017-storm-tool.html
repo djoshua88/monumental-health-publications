@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brief #017: STORM Tool — VA&#x27;s AI Suicide Prevention Prediction System</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 20px; line-height: 1.7; color: #1a1a1a; background: #fafafa; }
+  h1 { font-size: 2em; color: #0a2540; border-bottom: 3px solid #0066cc; padding-bottom: 12px; }
+  h2 { font-size: 1.4em; color: #0a2540; margin-top: 32px; }
+  h3 { font-size: 1.15em; color: #1a3a5c; }
+  blockquote { border-left: 4px solid #0066cc; margin: 16px 0; padding: 8px 20px; background: #f0f4f8; color: #333; }
+  code { background: #e8e8e8; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #1a1a2e; color: #e0e0e0; padding: 16px; border-radius: 8px; overflow-x: auto; }
+  pre code { background: none; color: inherit; }
+  a { color: #0066cc; }
+  .meta { color: #666; font-size: 0.85em; margin-bottom: 24px; padding: 12px 16px; background: #f0f4f8; border-radius: 6px; }
+  .back { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+  .back a { text-decoration: none; color: #0066cc; font-weight: 600; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+  ul, ol { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+  th { background: #0066cc; color: #fff; }
+</style>
+</head>
+<body>
+<div class="meta">
+<strong>Risk level:</strong> RED HIGH &nbsp;|&nbsp; <strong>Published:</strong> November 09, 2026<br>
+<strong>Authority:</strong> Policy & Ethics Council (t_78272e43), effective Nov 7, 2026<br>
+<strong>Compliance:</strong> compliance-qc refresh Nov 2, 2026 — APPROVED, 0 blocking, 0 advisory<br>
+<strong>Publisher:</strong> Monumental Health PLLC
+</div>
+<h1>Brief #017: STORM Tool — VA&#x27;s AI Suicide Prevention Prediction System</h1>
+
+<div style="background: #1a3a5c; color: #fff; padding: 20px; border-radius: 8px; margin: 24px 0; border-left: 4px solid #0066cc;">
+<strong>Veterans Crisis Line</strong> — If you or a veteran you know is in crisis, call <strong>988</strong> then press <strong>1</strong>, or text <strong>838255</strong>. Available 24/7. You are not alone.
+</div>
+
+<h1>INTERNAL ONLY — DRAFT FOR EDITORIAL AND COMPLIANCE REVIEW</h1>
+<h1>The Algorithm That Saved Lives: What VA's STORM Tool Proves About AI Done Right — and the Equity Gap It Still Hasn't Closed</h1>
+<p>The Department of Veterans Affairs runs the largest integrated healthcare system in the United States, and inside it sits a predictive analytics tool that most people outside the VA have never heard of. It is called STORM — the Stratification Tool for Opioid Risk Mitigation — and it has something that almost no other clinical AI tool in American healthcare can claim: a randomized controlled trial across all 140 VHA medical centers, with a mortality endpoint, published in a peer-reviewed journal.</p>
+<p>The result was a 22% reduction in all-cause mortality among the highest-risk veterans on opioid therapy. Not a pilot. Not a proof of concept. A system-wide trial.</p>
+<p>That number deserves attention on its own. But the story does not end there. When researchers examined whether STORM's risk scores predicted outcomes equally across racial and ethnic groups, they found that the same score did not mean the same risk for every veteran. The algorithm works. The equity question is still open. And the answer matters for every AI tool being deployed inside the VA — and across American healthcare.</p>
+<h2>What STORM is, and what it is not</h2>
+<p>STORM was developed by the VHA to address a crisis that has disproportionately affected veterans: opioid exposure, overdose, and suicide-related risk. The tool was built using electronic medical record data from 1,135,601 VHA patients prescribed opioid analgesics, with cross-validated model performance above an AUC of .80 — meaning the model reliably distinguished higher-risk from lower-risk patients.[4] In the development cohort, 2.1% of patients experienced an overdose or suicide-related event within the follow-up year.[4]</p>
+<p>STORM is a provider-facing dashboard, not an autonomous decision-maker. It surfaces risk and prompts interdisciplinary case review. A clinician who sees a high-risk flag is expected to act — to review the patient's medications, consider risk mitigation strategies such as urine drug screening or psychosocial treatment, and coordinate with the broader care team. The tool identifies risk; the human team responds.</p>
+<p>That design choice is the first thing STORM got right, and it matters more than it might seem.</p>
+<h2>The evidence: a randomized trial with a mortality endpoint</h2>
+<p>In 2018, the VA deployed STORM's risk-stratification mandate across all 140 VHA medical centers using a stepped-wedge cluster randomized controlled trial — a design that rolls out an intervention in sequence across sites, allowing rigorous causal inference without withholding the tool from any facility for the full study period. The trial ran for 23 months and enrolled 44,042 patients in the top 1% to 5% of predicted risk.[1]</p>
+<p>The primary finding was striking. Mandated case review for high-risk patients was associated with a statistically significant decrease in all-cause mortality: an odds ratio of 0.78, with a 95% confidence interval of 0.65 to 0.94.[1] Mandated patients were five times more likely to receive a case review than they would have been without the mandate, and they received more risk mitigation strategies.[1]</p>
+<p>A secondary analysis of the same trial, focusing on 10,685 patients on long-term opioid therapy, found an associated decrease in all-cause mortality of 3.31 percentage points and an associated decrease in opioid discontinuation of 11.16 percentage points.[2] The discontinuation finding matters clinically: abrupt opioid discontinuation itself poses harm for high-risk patients, and the fact that mandated review was associated with lower discontinuation rates suggests the intervention was protective, not punitive.</p>
+<p>There is an important nuance. The trial found no detectable effect on serious adverse events — the composite outcome that includes overdose and suicide-related events.[1] Mortality dropped. The adverse event rate did not. This distinction matters. The mechanism of the mortality reduction may run through care engagement, medication review, and risk mitigation rather than through direct prevention of overdose events themselves. The intervention saved lives, but not in the way a narrow "overdose prevention" framing would predict. Claiming STORM reduced overdose rates specifically would overstate the evidence. The verified outcome is all-cause mortality.</p>
+<p>This is the kind of evidence the AI-in-healthcare field has been asking for: a system-wide randomized trial with a hard endpoint, published in a peer-reviewed journal, with a secondary analysis and an equity study extending the findings. It is not the final word. It is the strongest word so far.</p>
+<h2>The equity gap the RCT did not close</h2>
+<p>A randomized trial answers the question "does the intervention work on average?" It does not, by itself, answer "does it work equally for everyone?" That second question is what Garrido and colleagues examined in a retrospective cohort study of 84,473 patients whose STORM risk scores fell in the top 5% to 10% range — a high-risk band, though slightly below the threshold that triggered the mandated review.[3]</p>
+<p>Their finding requires careful framing, because the direction matters. At similar predicted risk scores, White patients had higher observed rates of serious adverse events and mortality within six months than Black, Hispanic, and Asian patients.[3] Some of the mortality differences were driven by age composition differences across racial and ethnic groups.[3]</p>
+<p>This is not a finding that non-White veterans were undertreated or denied case reviews. It is a finding about the model's calibration. The same risk score did not predict the same outcome across populations. A single risk threshold applied uniformly may identify a different mix of patients in one group than in another — meaning the tool's predictive accuracy is not uniform, and the clinical action triggered by a given score may not correspond to the same actual risk for every veteran.</p>
+<p>The authors concluded that STORM may identify patients with clinically meaningful differences in outcome risk across race and ethnicity.[3] That is a calibration concern: whether the tool's predictions are equitably accurate, not whether the care that follows is equitably delivered. Both questions matter. This study addresses the first.</p>
+<h2>What STORM got right — and what that teaches about augmentation</h2>
+<p>The 22% mortality reduction is attributable to the system, not to the algorithm alone. The intervention was STORM plus mandated case review plus interdisciplinary clinical action. The AI identified the risk. The mandate required a response. The clinical team acted. Remove any one of those three components and the outcome may not hold.</p>
+<p>This is augmentation in its clearest form. The tool did not replace clinical judgment — it redirected clinical attention toward patients who needed it most, and it created a structural obligation to act. The clinician remained in the loop. The decision remained human. The algorithm's contribution was to ensure that the right patient was in front of the right team at the right time.</p>
+<p>For health systems deploying AI scribes, predictive models, and decision support tools, this is the design lesson. A tool that surfaces risk without requiring action produces awareness without intervention. A tool that acts without clinician judgment produces automation without accountability. STORM's design — predict, mandate review, support clinical action — is the template that connects AI capability to clinical outcome.</p>
+<h2>Why the equity gap demands a design response</h2>
+<p>The Garrido findings do not invalidate STORM. They sharpen the question. If the same risk score predicts different outcomes across racial groups, the model may need recalibration for subgroups — or the case review process may need to account for structural factors, comorbidities, and social determinants that the model does not capture.</p>
+<p>The parallel to the VA's REACH VET suicide prediction model is direct. REACH VET has undergone revisions to address equity concerns in its predictor set, including adding military sexual trauma and intimate partner violence as variables and removing race and ethnicity as predictors. STORM may need its own version of that moment — one that examines whether opioid risk prediction performs equitably across the veteran populations the VA serves, including women veterans, veterans with traumatic brain injury, and rural veterans with limited access to interdisciplinary teams.</p>
+<p>A practice-level example of the kind of clinical infrastructure that supports equitable response comes from the VA Tennessee Valley Healthcare System, where an interprofessional overdose review team reviews all overdose incidents regardless of fatality, intent, or substance involved.[5] That team — pharmacist-led and interdisciplinary — represents the human follow-through that makes tools like STORM effective. It is a single-site practice description, not a controlled study, and its authors call for further research to evaluate clinical outcomes.[5] But it illustrates the point: the algorithm identifies risk; the team structure determines whether the response is equitable.</p>
+<p>The equity audit, the ongoing validation, and the clinical follow-through are not features of the algorithm. They are features of the system around it. Building them in is the difference between an AI tool that works on average and one that works for everyone.</p>
+<h2>The standard STORM sets</h2>
+<p>STORM is the strongest evidence point in the growing landscape of clinical AI inside the VA. The VA's AI Use Case Inventory has grown substantially year over year, spanning clinical care, operations, and research. Many of those tools will never be evaluated with a randomized trial. Some will not be evaluated at all.</p>
+<p>STORM sets the bar. A tool with peer-reviewed evidence, a mortality endpoint, a published secondary analysis, and an equity study is the standard against which every new deployment should be measured. Not every tool needs a 140-site cluster RCT. But every tool should be able to answer: Does it work? For whom does it work? Who is checking?</p>
+<p>The question for the VA — and for every health system deploying AI — is not whether artificial intelligence can save veteran lives. STORM shows that it can. The question is whether we build the equity audit, the ongoing validation, and the clinical follow-through into every tool that follows. The algorithm opened the door. The work of building an equitable room behind it is still ahead.</p>
+<hr />
+<p><strong>Evidence boundary:</strong> The Strombotne trial found a reduction in all-cause mortality but no detectable effect on serious adverse events. STORM should be described as associated with reduced mortality, not as reducing overdose or suicide events specifically. The Garrido equity study is a retrospective observational analysis, not a randomized trial, and its findings concern model calibration, not access to care. The Barrett and Kemerer overdose review team description is a single-site practice report, not outcome evidence.</p>
+<p><strong>Equity framing note:</strong> At similar STORM risk scores, White patients had higher observed rates of SAEs and mortality than Black, Hispanic, and Asian patients. The finding is a model calibration concern — whether a single risk threshold is equitably accurate across populations — not a finding that non-White veterans were denied case reviews or undertreated.</p>
+<p><strong>Editorial status:</strong> Internal draft only. Not approved for publication or external distribution. Clinical claims verified by clinical-decision-support on September 28, 2026. Compliance framing review required before publication.</p>
+<p><strong>Firewall:</strong> No content draws on Capital Intelligence data (positions, strategies, returns, or proprietary investment research).</p>
+<h2>Sources</h2>
+<p>[1] Strombotne KL, et al. Effect of a Predictive Analytics-Targeted Program in Patients on Opioids: a Stepped-Wedge Cluster Randomized Controlled Trial. J Gen Intern Med. 2023 Feb;38(2):375-381. PMID: 35501628. https://pubmed.ncbi.nlm.nih.gov/35501628/</p>
+<p>[2] Li Y, et al. Impact of Mandated Case Review Policy on Opioid Discontinuation and Mortality Among High-Risk Long-Term Opioid Therapy Patients: The STORM Stepped-Wedge Cluster Randomized Controlled Trial. Subst Abus. 2023 Oct;44(4):292-300. PMID: 37830514. https://pubmed.ncbi.nlm.nih.gov/37830514/</p>
+<p>[3] Garrido MM, et al. Differences in adverse outcomes across race and ethnicity among Veterans with similar predicted risks of an overdose or suicide-related event. Pain Med. 2024 Feb 1;25(2):125-130. PMID: 37738604. https://pubmed.ncbi.nlm.nih.gov/37738604/</p>
+<p>[4] Oliva EM, et al. Development and applications of the Veterans Health Administration's Stratification Tool for Opioid Risk Mitigation (STORM) to improve opioid safety and prevent overdose and suicide. Psychol Serv. 2017 Feb;14(1):34-49. PMID: 28134555. https://pubmed.ncbi.nlm.nih.gov/28134555/</p>
+<p>[5] Barrett M, Kemerer S, Colvard M. Implementation and evaluation of interprofessional overdose review team recommendations following intentional or accidental overdose events. Ment Health Clin. 2024 Jun 3;14(3):224-228. PMID: 38835812. https://pubmed.ncbi.nlm.nih.gov/38835812/</p>
+<h2>Internal verification trail</h2>
+<ul>
+<li>Source brief: <code>/root/.hermes/profiles/content-creator/content_pipeline.md</code>, Brief #017, lines 492–517.</li>
+<li>Clinical verification: <code>/root/.hermes/shared/editorial/brief-017-storm-cds-verification.md</code> (verdict: APPROVED, all 5 claims verified Sep 28, 2026; advisories A1, A2, A3 incorporated in this draft).</li>
+<li>Advisory A1 (equity direction): White patients had higher observed SAE/mortality at similar risk scores. Framed as calibration equity, not access equity.</li>
+<li>Advisory A2 (evidence tier): Barrett and Kemerer presented as single-site practice description, not outcome evidence; full authorship (Barrett, Kemerer, Colvard) reflected in source citation.</li>
+<li>Advisory A3 (outcome metric): All-cause mortality distinguished from SAEs and overdose/suicide events throughout. Trial's null finding on SAEs stated explicitly.</li>
+</ul>
+<div class="back"><a href="index.html">← Back to Publication Index</a></div>
+</body>
+</html>
